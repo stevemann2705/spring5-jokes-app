@@ -9,9 +9,8 @@ public class JokeServiceImpl implements JokeService {
 
     private ChuckNorrisQuotes chuckNorrisQuotes;
 
-    @Autowired
-    public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
-        this.chuckNorrisQuotes = chuckNorrisQuotes;
+    public JokeServiceImpl() {
+        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
     }
 
     @Override
